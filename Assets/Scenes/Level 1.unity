@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0041203550a5f4123a944b5549340281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadDelay: 1
 --- !u!61 &134573744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -582,7 +583,7 @@ MonoBehaviour:
   m_CornerAngleThreshold: 30
   m_ColliderDetail: 16
   m_ColliderOffset: 0.3
-  m_UpdateCollider: 1
+  m_UpdateCollider: 0
   m_OptimizeCollider: 1
   m_OptimizeGeometry: 1
   m_EnableTangents: 0
@@ -1645,8 +1646,8 @@ GameObject:
   - component: {fileID: 2140889602}
   - component: {fileID: 2140889603}
   - component: {fileID: 2140889604}
-  - component: {fileID: 2140889607}
   - component: {fileID: 2140889606}
+  - component: {fileID: 2140889608}
   m_Layer: 0
   m_Name: Barry
   m_TagString: Player
@@ -1706,7 +1707,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.33, y: 0.72}
   serializedVersion: 2
-  m_Radius: 0.31
+  m_Radius: 0.34
 --- !u!4 &2140889605
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,54 +1737,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueAmount: 10
---- !u!60 &2140889607
-PolygonCollider2D:
+--- !u!114 &2140889608
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140889601}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.6138359, y: 0.9972229}
-      - {x: 0.4065424, y: 1.048542}
-      - {x: 0.11687568, y: 0.97647476}
-      - {x: 0.005467944, y: 0.83862734}
-      - {x: -0.14444497, y: 0.8753445}
-      - {x: -0.45369583, y: 0.7354436}
-      - {x: -0.5397855, y: 0.64905334}
-      - {x: -1.4082382, y: 0.1337595}
-      - {x: -1.2280644, y: -0.056617975}
-      - {x: -0.5271072, y: 0.39240706}
-      - {x: -0.69031817, y: 0.10544729}
-      - {x: -0.4939184, y: -0.20774007}
-      - {x: -0.69212765, y: -0.47732306}
-      - {x: -0.70443654, y: -0.7588233}
-      - {x: -0.45740274, y: -0.7681831}
-      - {x: -0.23245837, y: -0.27761114}
-      - {x: 0.1563728, y: -0.15365934}
-      - {x: 0.124726266, y: -0.38595772}
-      - {x: 0.24192095, y: -0.80901694}
-      - {x: 0.61380714, y: -0.8060069}
-      - {x: 0.3748189, y: -0.058576584}
-      - {x: 0.82828444, y: -0.55733514}
-      - {x: 1.0608437, y: -0.4020455}
-      - {x: 0.39876896, y: 0.38457727}
-      - {x: 0.67160755, y: 0.5648174}
-      - {x: 0.7022768, y: 0.855119}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca244c4698a9a4fc593679bc34f759d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadDelay: 0.5
